@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Home - Balappa Bones Setter</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      scroll-behavior: smooth;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(to top right, #1e293b, #0f172a);
+      color: #e2e8f0;
+      overflow-x: hidden;
+    }
+
+    nav {
+      background: rgba(15, 23, 42, 0.95);
+      padding: 16px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 0 10px rgba(0,0,0,0.4);
+      animation: slideDown 1s ease-in-out;
+    }
+
+    @keyframes slideDown {
+      from { top: -80px; opacity: 0; }
+      to { top: 0; opacity: 1; }
+    }
+
+    nav .logo {
+      display: flex;
+      align-items: center;
+      font-size: 20px;
+      font-weight: bold;
+      color: #60a5fa;
+    }
+
+    nav .logo img {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      margin-right: 10px;
+      border: 2px solid #60a5fa;
+      box-shadow: 0 0 10px rgba(96, 165, 250, 0.6);
+    }
+
+    nav ul {
+      display: flex;
+      list-style: none;
+      gap: 24px;
+    }
+
+    nav ul li a {
+      color: #cbd5e1;
+      text-decoration: none;
+      transition: 0.3s;
+      font-weight: 500;
+    }
+
+    nav ul li a:hover {
+      color: #60a5fa;
+      transform: scale(1.05);
+    }
+
+    header {
+      background: radial-gradient(circle at center, #1f273b, #2f509c);
+      padding: 100px 20px 80px;
+      text-align: center;
+      animation: fadeIn 2s ease-in;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    header h1 {
+      font-size: 48px;
+      color: #93c5fd;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 20px;
+      color: #94a3b8;
+      margin-bottom: 30px;
+    }
+
+    .book-appointment-btn {
+      padding: 14px 28px;
+      background: linear-gradient(to right, #10b981, #3b82f6);
+      color: white;
+      border: none;
+      border-radius: 10px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: 0.3s ease;
+      box-shadow: 0 0 15px rgba(16, 185, 129, 0.4);
+    }
+
+    .book-appointment-btn:hover {
+      opacity: 0.9;
+      transform: scale(1.03);
+    }
+
+    .intro-section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
+      animation: fadeInUp 1s ease forwards;
+      text-align: center;
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(40px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .intro-section h2 {
+      font-size: 32px;
+      margin-bottom: 20px;
+      color: #93c5fd;
+    }
+
+    .intro-section p {
+      font-size: 18px;
+      line-height: 1.8;
+      color: #cbd5e1;
+      margin-bottom: 20px;
+    }
+
+    footer {
+      background: #1e293b;
+      padding: 20px;
+      text-align: center;
+      font-size: 14px;
+      color: #94a3b8;
+    }
+
+    @media(max-width: 768px) {
+      nav ul {
+        display: none;
+      }
+
+      header h1 {
+        font-size: 32px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div class="logo">
+      <img src="logo.png" alt="Logo">
+      <span>Balappa Bones Setter</span>
+    </div>
+    <ul>
+      <li><a href="about.html">About</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="contact.html">Contact</a></li>
+       <li><a href="location.html">Locate Us</a></li>
+    </ul>
+  </nav>
+
+  <header>
+    <h1>Ancient Healing with Modern Compassion</h1>
+    <p>Trusted by thousands for generations — Natural Bone Setting Expertise</p>
+    <button class="book-appointment-btn" onclick="window.location.href='book-appointment.html'">Book Appointment</button>
+  </header>
+
+  <section class="intro-section">
+    <h2>Welcome to Balappa Bones Setter</h2>
+    <p>We believe in restoring the body's natural alignment using age-old Indian techniques passed down through generations. With no surgeries or synthetic medications, our healing methods are grounded in tradition, herbal remedies, and personal care. Patients from all over the region visit us for effective treatment of fractures, sprains, dislocations, and chronic joint pains.</p>
+    <p>At Balappa Bones Setter, we maintain a holistic approach that includes therapeutic massages, herbal oils, and natural bone setting techniques. Our vision is to offer accessible, affordable, and authentic healthcare to every individual, especially those from rural and underprivileged backgrounds.</p>
+    <p>We also collaborate with local communities, NGOs, and health workers to ensure that traditional Indian healthcare remains relevant, respected, and beneficial in today’s modern world. Visit us today and experience the art of ancient healing!</p>
+  </section>
+
+  <footer>
+    © 2025 Balappa Bones Setter | Designed by YogaGokarna | All Rights Reserved
+  </footer>
+
+</body>
+</html>
